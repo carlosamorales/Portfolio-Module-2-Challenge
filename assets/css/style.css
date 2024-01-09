@@ -1,0 +1,231 @@
+* {
+    box-sizing:content-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d6d8dc;
+}
+/* Styling the anchor Elements, hyperlinks*/
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Add underline to the links in the navigation */
+header nav ul li a {
+    text-decoration: underline;
+}
+
+/* Adjusting Font size for all Paragraphs */
+p {
+    font-size: 16px;
+}
+
+/* header styles begin */
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header h1 .Portofolio {
+    color: #d9dcd6;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* header styles end */
+
+/* Separator Styles */
+.separator {
+    width: 4px; /* Adjust the thickness of the line */
+    height: 100%; /* Set the height to cover the entire container */
+    background-color: #2a607c; /* Line color */
+    position: absolute; /* Position the line absolutely */
+    top: 0;
+    left: 50%; /* Position it to the right of the text */
+    transform: translateX(-50%); /* Horizontally center the line based on the text width */
+    z-index: 20; /* Set a higher z-index to bring it to the front */
+}
+
+/* Rest of Content Styles */
+.rest-of-content {
+    padding: 50px;
+    margin: 20px auto; /* Center the section horizontally */
+    max-width: 800px; /* Set a maximum width for the section */
+    position: relative; /* Make it relative to allow positioning content */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.rest-of-content .container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+
+.rest-of-content .left {
+    flex: 1; /* Let the left section take available space */
+    position: relative; /* Make it relative to position the line */
+}
+
+.rest-of-content .left h1 {
+    font-size: 100px; /* Adjust the font size as needed */
+    margin-top: 0; /* Remove top margin for the heading */
+    
+}
+
+.rest-of-content .separator + .container-right {
+    flex: 1; /* Let the container-right take available space */
+    margin-left: 20px; /* Add margin to the left for separation from the separator line */
+
+}
+
+.rest-of-content .container-right {
+    flex: 1; /* Let the container-right take available space */
+    margin-left: 20px; /* Add margin to the left for separation from the separator line */
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    
+}
+
+.rest-of-content .right {
+    max-width: 800px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+
+.rest-of-content .right p {
+    margin-top: 0;
+   font-size: 24px;
+   line-height: 1.5;
+   display: flex;
+   justify-content: flex-end;
+   white-space: normal;
+   align-items: center;
+   flex-wrap: wrap; /* Allow text to wrap onto the next line */
+}
+
+.rest-of-content .right p span {
+    margin-bottom: 20px; /* Add margin to the right of each span for spacing */
+    
+}
+
+/* Additional styling for underline */
+.underline {
+    text-decoration: underline;
+}
+
+/* Additional styles for Work Section */
+.rest-of-content:nth-child(2) {
+    margin-top: 50px; /* Add margin to separate Work section from About Me section */
+}
+
+/* Additional styles for Work Section */
+.rest-of-content:nth-child(2) {
+    margin-top: 50px; /* Add margin to separate Work section from About Me section */
+}
+
+/* Add this CSS for Work Section */
+.rest-of-content .work-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Add some space between the images and the text */
+}
+
+.rest-of-content .work-images img {
+    max-width: 80%; /* Adjust the width of the images */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to each image */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+/* Enlarge images on hover */
+.rest-of-content .work-images img:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+}
+
+/* Add this CSS for responsive layout */
+@media (max-width: 600px) {
+    .rest-of-content .work-images {
+        flex-direction: column; /* Stack images vertically on small screens */
+    }
+
+    .rest-of-content .work-images img {
+        max-width: 100%; /* Take up full width on small screens */
+        margin-bottom: 10px; /* Add some space between stacked images */
+    }
+}
+
+/* Additional styles for anchor links */
+body {
+    scroll-behavior: smooth; /* Add smooth scrolling behavior to anchor links */
+}
+
+/* Additional styling for anchor links in the navigation */
+header nav ul li a {
+    cursor: pointer; /* Add pointer cursor to indicate clickable links */
+}
+
+/* Additional styles for Work Section */
+.rest-of-content:nth-child(2) {
+    margin-top: 50px; /* Add margin to separate Work section from About Me section */
+}
+
+/* Add this CSS for Work Section */
+.rest-of-content .work-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Add some space between the images and the text */
+}
+
+.rest-of-content .work-images img {
+    max-width: 80%; /* Adjust the width of the images */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to each image */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+/* Enlarge images on hover */
+.rest-of-content .work-images img:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+}
+
+/* Add this CSS for responsive layout */
+@media (max-width: 600px) {
+    .rest-of-content .work-images {
+        flex-direction: column; /* Stack images vertically on small screens */
+    }
+
+    .rest-of-content .work-images img {
+        max-width: 100%; /* Take up full width on small screens */
+        margin-bottom: 10px; /* Add some space between stacked images */
+    }
+}
+
+.profile-picture {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    margin-right: 20px; /* Add margin to separate the image from the heading */
+}
