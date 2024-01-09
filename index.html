@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+ 
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- descriptive Title -->
+    <title>My Portofolio</title>
+</head>
+
+<body>
+    
+    <header>
+        <img src="../assets/images/profile_picture.jpg" alt="Profile Picture" class="profile-picture">
+        <h1>Port<span class="Portfolio">foli</span>o</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact Me</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/carlos-asencio-a89000a1/" target="_blank">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+  
+    <!-- About Me Section -->
+    <section id="about-me" class="rest-of-content">
+        <div class="container">
+            <div class="left">
+                <h1>About Me</h1>
+            </div>
+        <!-- Separator Line -->
+        <div class="separator"></div>
+
+        <div class="container-right">   
+            <div class="right">
+
+                <p>
+                    <!-- Add your content here -->
+                    I'm a goal-oriented engineer with several years of experience in semiconductor and system engineering.
+                    I have some coding experience, but I've always been passionate about improving my coding skills in web development.
+                </p>
+
+            </div>
+        </div>
+        </div><!-- end container-->
+
+        <!-- Work Section -->
+    <section id="work" class="rest-of-content">
+        <div class="container">
+            <div class="left">
+                <h1>Work</h1>
+            </div>
+            <!-- Separator Line -->
+            <div class="separator"></div>
+                <div class="container-right">   
+                    <div class="right">
+                    <!-- Add images with links -->
+                    <div class="work-images">
+                        <a href="https://carlosamorales.github.io/Challenges/" target="_blank" title="Challenge #1">
+                            <img src="../assets/images/Challenge-1.jpg" alt="Challenge 1">
+                        </a>
+                        <a href="https://carlosamorales.github.io/prework-study-guide/" target="_blank" title="Pre-work Study Guide">
+                            <img src="../assets//images/Pre-work.jpg" alt="Pre Work">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end container-->
+    </section>
+   
+    <!-- Contact Me Section -->
+    <article id="contact-me" class="rest-of-content">
+        <div class="container">
+            <header>
+                <h1>Contact Me</h1>
+            </header>
+            <!-- Separator Line -->
+            <div class="separator"></div>
+        <div class="container-right">
+                <div class="right">
+                    <address>
+                        <!-- Add your contact information here -->
+                        <p>
+                            <!-- Add your contact information here -->
+                            <span>Phone: <span class="underline">5129751970</span></span>
+                            <span>Email: <a href="mailto:carlosgkt@gmail.com" class="underline">carlosgkt@gmail.com</a></span>
+                            <span>GitHub: <a href="https://github.com/carlosamorales" target="_blank" class="underline">GitHub</a></span>
+
+                        </p>
+                    </address>
+                </div>
+        </div>
+    </div><!-- end container -->
+    <script>
+        // Smooth scrolling script
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
