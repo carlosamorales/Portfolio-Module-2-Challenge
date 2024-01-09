@@ -28,7 +28,8 @@ What are the steps required to install your project? Provide a step-by-step desc
 
 ## Usage
 
-![image](https://github.com/carlosamorales/Module2-Challenge/assets/7796766/c2a73a4f-3575-4713-a78c-db8f59cce45b)
+![image](https://github.com/carlosamorales/Portfolio-Module-2-Challenge/assets/7796766/35dda07c-21a3-4371-ba3a-b2da10fe577e)
+
 
 
 ## Credits
