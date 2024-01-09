@@ -1,5 +1,5 @@
 * {
-    box-sizing:content-box;
+    box-sizing: content-box;
     padding: 0;
     margin: 0;
 }
@@ -7,6 +7,7 @@
 body {
     background-color: #d6d8dc;
 }
+
 /* Styling the anchor Elements, hyperlinks*/
 a {
     color: #ffffff;
@@ -93,13 +94,11 @@ header nav ul li {
 .rest-of-content .left h1 {
     font-size: 100px; /* Adjust the font size as needed */
     margin-top: 0; /* Remove top margin for the heading */
-    
 }
 
 .rest-of-content .separator + .container-right {
     flex: 1; /* Let the container-right take available space */
     margin-left: 20px; /* Add margin to the left for separation from the separator line */
-
 }
 
 .rest-of-content .container-right {
@@ -107,7 +106,6 @@ header nav ul li {
     margin-left: 20px; /* Add margin to the left for separation from the separator line */
     display: flex;
     justify-content: flex-end; /* Align content to the right */
-    
 }
 
 .rest-of-content .right {
@@ -115,31 +113,24 @@ header nav ul li {
     margin: 0 auto; /* Center the container horizontally */
 }
 
-
 .rest-of-content .right p {
     margin-top: 0;
-   font-size: 24px;
-   line-height: 1.5;
-   display: flex;
-   justify-content: flex-end;
-   white-space: normal;
-   align-items: center;
-   flex-wrap: wrap; /* Allow text to wrap onto the next line */
+    font-size: 24px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: flex-end;
+    white-space: normal;
+    align-items: center;
+    flex-wrap: wrap; /* Allow text to wrap onto the next line */
 }
 
 .rest-of-content .right p span {
     margin-bottom: 20px; /* Add margin to the right of each span for spacing */
-    
 }
 
 /* Additional styling for underline */
 .underline {
     text-decoration: underline;
-}
-
-/* Additional styles for Work Section */
-.rest-of-content:nth-child(2) {
-    margin-top: 50px; /* Add margin to separate Work section from About Me section */
 }
 
 /* Additional styles for Work Section */
@@ -164,18 +155,6 @@ header nav ul li {
 /* Enlarge images on hover */
 .rest-of-content .work-images img:hover {
     transform: scale(1.1); /* Scale the image on hover */
-}
-
-/* Add this CSS for responsive layout */
-@media (max-width: 600px) {
-    .rest-of-content .work-images {
-        flex-direction: column; /* Stack images vertically on small screens */
-    }
-
-    .rest-of-content .work-images img {
-        max-width: 100%; /* Take up full width on small screens */
-        margin-bottom: 10px; /* Add some space between stacked images */
-    }
 }
 
 /* Additional styles for anchor links */
@@ -214,18 +193,72 @@ header nav ul li a {
 
 /* Add this CSS for responsive layout */
 @media (max-width: 600px) {
-    .rest-of-content .work-images {
-        flex-direction: column; /* Stack images vertically on small screens */
+    header {
+        text-align: center;
     }
 
-    .rest-of-content .work-images img {
-        max-width: 100%; /* Take up full width on small screens */
-        margin-bottom: 10px; /* Add some space between stacked images */
+    header h1 {
+        display: block;
+        font-size: 36px;
     }
-}
 
-.profile-picture {
-    width: 50px; /* Adjust the width as needed */
-    height: 50px; /* Adjust the height as needed */
-    margin-right: 20px; /* Add margin to separate the image from the heading */
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    .rest-of-content {
+        padding: 30px;
+    }
+
+    .rest-of-content .left h1 {
+        font-size: 20px;
+    }
+
+    .rest-of-content .container-right {
+        margin-left: 0;
+    }
+
+    .work-images {
+        flex-direction: column;
+    }
+
+    .work-images img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .profile-picture {
+        margin-right: 0;
+    }
+
+    .rest-of-content .container-right {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rest-of-content .right p {
+        text-align: left;
+    }
+
+    address {
+        margin-top: 20px;
+    }
+
+    /* Additional styles for better visibility on smaller screens */
+    .rest-of-content .right p span {
+        display: block; /* Ensure each span is on a new line */
+        margin-bottom: 10px; /* Add space between spans */
+    }
 }
